@@ -1,0 +1,163 @@
+header {
+  height: 100vh;
+  padding-top: 5rem;
+  /* overflow: hidden; */
+  text-align: center;
+}
+
+.header-container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  left: 1rem;
+  bottom: -7rem;
+  transition: all 200ms ease-in-out;
+}
+
+.linkedin:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.github:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.instagram:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(10deg);
+  }
+  50% {
+    transform: rotateZ(-10deg);
+  }
+  75% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(10deg);
+  }
+}
+
+.my {
+  background: transparent;
+  width: 30rem;
+  height: 30rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-15rem);
+  margin-top: 4rem;
+  border-radius: 15rem;
+  padding: 1rem;
+  opacity: 0.8;
+  transition: all 100ms ease-in-out;
+  cursor: not-allowed;
+}
+
+.my:hover {
+  opacity: 1;
+}
+
+.scroller {
+  position: absolute;
+  right: 2rem;
+  bottom: -3rem;
+  /* transform: rotate(90deg); */
+  font-size: 2.6rem;
+}
+
+.scroller:hover {
+  animation: down 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(25px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .social-links {
+    top: 30rem;
+    left: 4rem;
+  }
+  .scroller {
+    top: 35rem;
+    right: 4rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+  .my {
+    width: 25rem;
+    height: 25rem;
+    transform: translateX(-12.4rem);
+    border-radius: 15rem;
+  }
+  .social-links {
+    bottom: -16rem;
+    left: 4rem;
+  }
+  .scroller {
+    bottom: -12rem;
+    right: 4rem;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .social-links {
+    top: 30rem;
+    left: 4rem;
+  }
+  .scroller {
+    top: 33rem;
+    right: 4rem;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  header {
+    height: 100vh;
+  }
+  .social-links,
+  .scroller {
+    display: none;
+  }
+
+  .my {
+    width: 20rem;
+    height: 20rem;
+    transform: translateX(-9.5rem);
+    border-radius: 15rem;
+  }
+}

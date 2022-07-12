@@ -1,0 +1,165 @@
+#contact {
+  margin-top: 90rem;
+  height: 110vh;
+}
+
+.contact-container {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  width: 70%;
+}
+
+.contact-option {
+  background-color: lightgrey;
+  color: black;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  transition: all 200ms ease-in-out;
+}
+
+.contact-option a {
+  color: blue;
+  /* background-color: lightblue; */
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.contact-option:hover {
+  background-color: gray;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  width: 80%;
+  overflow: hidden;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.3rem;
+  border-radius: 0.6rem;
+  border: 1px solid white;
+  background: transparent;
+  resize: none;
+  color: white;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+form .submit {
+  padding: 1rem 3rem;
+}
+
+@media screen and (max-width: 1113px) {
+  #contact {
+    margin-top: 80rem;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .contact-container {
+    grid-template-columns: 40% 60%;
+    gap: 2.5rem;
+  }
+  form {
+    width: 100%;
+  }
+  .contact-options {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 882px) {
+  #contact {
+    margin-top: 75rem;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  #contact {
+    margin-top: 65rem;
+    height: 180vh;
+  }
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 0rem;
+    row-gap: 0rem;
+    /* gap: 2.5rem; */
+  }
+  .contact-options {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 661px) {
+  #contact {
+    margin-top: 200rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  #contact {
+    margin-top: 190rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #contact {
+    margin-top: 175rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #contact {
+    margin-top: 170rem;
+    height: 140vh;
+    gap: 0rem;
+  }
+  .contact-container {
+    gap: 0rem;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  #contact {
+    margin-top: 165rem;
+    height: 140vh;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  #contact {
+    margin-top: 160rem;
+    height: 140vh;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #contact {
+    margin-top: 160rem;
+    height: 150vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #contact {
+    margin-top: 160rem;
+    height: 170vh;
+  }
+}

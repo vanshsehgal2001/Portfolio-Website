@@ -1,0 +1,40 @@
+.about-my {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 2.5rem;
+  border-radius: 4rem;
+  color: black;
+}
+
+.about-heading {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 765px) {
+  .about-heading {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .about-my {
+    margin: auto;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    width: 95%;
+  }
+  .about-heading {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 553px) {
+  #about {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #about {
+    height: 85vh;
+  }
+}
