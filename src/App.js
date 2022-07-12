@@ -11,7 +11,7 @@ import ParticlesComp from './components/ParticlesComp'
 const App = () => {
   return (
     <>
-      {/* <ParticlesComp /> */}
+      <ParticlesComp />
       <Main />
       <Navbar />
       <About />
