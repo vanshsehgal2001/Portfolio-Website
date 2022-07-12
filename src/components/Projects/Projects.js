@@ -2,6 +2,7 @@ import React from 'react'
 import blogbee from '../../assets/blogbee.png'
 import reactle from '../../assets/reactle.png'
 import './Projects.css'
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const projects = [
     {
@@ -51,29 +52,35 @@ const projects = [
 
 const Projects = () => {
     return (
+
         <section id="projects">
             <h3>My Work</h3>
             <h2 style={{ fontSize: "40px" }} >Projects</h2>
 
             <div className="container projects-container" >
                 {
+
                     projects.map(project => {
                         return (
-                            <article className="project-item" style={{ width: "100%" }} >
-                                <div >
-                                    <img className="project-image" src={project.image} alt='' />
-                                </div>
-                                <h2 style={{ fontSize: "30px" }} >
-                                    {project.title}
-                                </h2>
-                                <div className="project-content" >
-                                    <a className="btn" target="_blank" rel="noopener noreferrer" href={project.github}> Github  </a>
-                                    <a className="btn" target="_blank" rel="noopener noreferrer" href={project.demo}> Demo  </a>
-                                </div>
-                            </article>
+                            <AnimationOnScroll animateIn='animate__fadeIn' >
+
+                                <article className="project-item" style={{ width: "100%" }} >
+                                    <div >
+                                        <img className="project-image" src={project.image} alt='' />
+                                    </div>
+                                    <h2 style={{ fontSize: "30px" }} >
+                                        {project.title}
+                                    </h2>
+                                    <div className="project-content" >
+                                        <a className="btn" target="_blank" rel="noopener noreferrer" href={project.github}> Github  </a>
+                                        <a className="btn" target="_blank" rel="noopener noreferrer" href={project.demo}> Demo  </a>
+                                    </div>
+                                </article>
+                            </AnimationOnScroll>
                         )
                     })
                 }
+
             </div>
 
         </section>
