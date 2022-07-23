@@ -2,6 +2,7 @@ import React from 'react'
 import blogbee from '../../assets/blogbee.png'
 import reactle from '../../assets/reactle.png'
 import githunt from '../../assets/githunt.png'
+import apnidukaan from '../../assets/apni-dukaan.png'
 import './Projects.css'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
@@ -29,25 +30,25 @@ const projects = [
     },
     {
         id: 4,
-        image: 'https://t4.ftcdn.net/jpg/04/70/29/97/360_F_470299797_UD0eoVMMSUbHCcNJCdv2t8B2g1GVqYgs.jpg',
-        title: 'Contact House',
-        github: 'https://github.com/vanshsehgal2001/Contact-House',
+        image: apnidukaan,
+        title: 'Apni Dukaan',
+        github: 'https://github.com/vanshsehgal2001/Apni-Dukaan',
         demo: ''
     },
-    {
-        id: 5,
-        image: 'https://t4.ftcdn.net/jpg/04/70/29/97/360_F_470299797_UD0eoVMMSUbHCcNJCdv2t8B2g1GVqYgs.jpg',
-        title: 'Scoop News',
-        github: 'https://github.com/vanshsehgal2001/ScoopNews',
-        demo: ''
-    },
-    {
-        id: 6,
-        image: 'https://t4.ftcdn.net/jpg/04/70/29/97/360_F_470299797_UD0eoVMMSUbHCcNJCdv2t8B2g1GVqYgs.jpg',
-        title: 'Covid Tracker',
-        github: 'https://github.com/vanshsehgal2001/Covid-19',
-        demo: ''
-    }
+    // {
+    //     id: 5,
+    //     image: 'https://t4.ftcdn.net/jpg/04/70/29/97/360_F_470299797_UD0eoVMMSUbHCcNJCdv2t8B2g1GVqYgs.jpg',
+    //     title: 'Scoop News',
+    //     github: 'https://github.com/vanshsehgal2001/ScoopNews',
+    //     demo: ''
+    // },
+    // {
+    //     id: 6,
+    //     image: 'https://t4.ftcdn.net/jpg/04/70/29/97/360_F_470299797_UD0eoVMMSUbHCcNJCdv2t8B2g1GVqYgs.jpg',
+    //     title: 'Covid Tracker',
+    //     github: 'https://github.com/vanshsehgal2001/Covid-19',
+    //     demo: ''
+    // }
 ]
 
 
@@ -74,7 +75,7 @@ const Projects = () => {
                                     </h2>
                                     <div className="project-content" >
                                         <a className="btn" target="_blank" rel="noopener noreferrer" href={project.github}> Github  </a>
-                                        {project.demo != '' && (<a className="btn" target="_blank" rel="noopener noreferrer" href={project.demo}> Demo  </a>)}
+                                        {project.demo !== '' && (<a className="btn" target="_blank" rel="noopener noreferrer" href={project.demo}> Demo  </a>)}
                                     </div>
                                 </article>
                             </AnimationOnScroll>
